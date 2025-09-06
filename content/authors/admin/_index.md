@@ -140,15 +140,15 @@ hobbies:
       - name: "Magic: the Gathering"
         description: ''
         percent: 75
-        icon: playing-cards
+        icon: cards 🃏 
       - name: Reading
         description: ''
         percent: 100
-        icon: books
+        icon: books 📚 
       - name: Tarot
         description: ''
         percent: 80
-        icon: crystal-ball
+        icon: 🔮
 
 languages:
   - name: English
