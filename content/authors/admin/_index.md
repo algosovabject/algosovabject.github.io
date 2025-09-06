@@ -70,8 +70,8 @@ education:
 
   - area: Video Game Art
     institution: Full Sail University
-    date_start: 2020-06
-    date_end: 2022-09
+    date_start: 2020-06-13
+    date_end: 2022-09-22
     summary: |
       GPA: 3.7
       Developed strong systems thinking and visual communication skills through real-time rendering, animation pipelines, and digital production environments.
@@ -80,8 +80,8 @@ education:
 
   - area: Graphic Design
     institution: Nossi College of Art
-    date_start: 2007-08
-    date_end: 2009-09
+    date_start: 2007-08-01
+    date_end: 2009-09-29
     summary: |
       GPA: 3.8
       "Most Creative" Faculty Award
@@ -93,7 +93,7 @@ work:
     company_logo: ''
     date_start: 2023
     date_end: 2025
-    summary: |2-
+    summary: |
       Responsibilities include:
       - Produced and optimized 100+ design assets monthly under rapid-turnaround deadlines.
       - Created internal tracking systems and documentation to reduce revision time by 30%.
@@ -163,7 +163,7 @@ languages:
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 Selected Projects:
   - title: 'Algorithms of Abjection (YouTube + Writing Portfolio)'
-    date: 2025
+    date: '2025'
     icon: youtube
     summary: |
       - Designed and documented interactive ML/AI art systems exploring ethics, computation, and philosophy.
@@ -174,7 +174,7 @@ Selected Projects:
       url: 'https://youtube.com/algosovabject'
 
   - title: 'Slime Mold Oracle (Whitepaper)'
-    date: 2025
+    date: '2025'
     workflow: Python, Streamlit, Graph-Based Algorithm, Render, Hugging Face, Streamlit, Git
     summary: |
       - Built modular graph-based "divination" agent using Python.
