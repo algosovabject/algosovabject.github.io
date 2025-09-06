@@ -160,7 +160,7 @@ languages:
   - name: Korean (한글)
     percent: 10
 
-# Awards.
+# Portfolio.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
@@ -185,7 +185,7 @@ Selected Projects:
       - Synthesized scientific research on Physarum polycephalum into a readable, well-cited analysis.
       - Positioned project within related work (AI oracles, tarot systems, bio-inspired computation).
     button:
-      text: 'Read them on Git'
+      text: 'View here'
       url: 'https://github.com/algosovabject'
 
   - title: 'Glass Casket (AI Black Box Visualizer)'
@@ -196,7 +196,7 @@ Selected Projects:
       - Built a query engine that both answers user prompts and threads connections between past queries, creating a dynamic “graveyard” of old models and language fragments.
       - Highlights the tension between interpretability, memory, and obsolescence in machine learning systems through an accessible, visual interface.
     button:
-      text: 'Git Repo'
+      text: 'View here'
       url: 'https://github.com/algosovabject'
 
   - title: 'Robot Boyfriend WHEN? (Essay + Multimedia Drop)'
@@ -206,7 +206,7 @@ Selected Projects:
       - Integrating original graphics and cross-platform release (Medium, YouTube, Instagram).
       - Example of adaptive style: balancing technical accuracy with humor, accessibility, and theory.
     button:
-      text: 'Read on Medium'
+      text: 'View here'
       url: 'https://medium.com/algosovabject'
 
 ---

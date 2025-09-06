@@ -1,6 +1,6 @@
 ---
 title: 'Home'
-date: 2023-10-24
+date: 2025-09-06
 type: landing
 
 design:
@@ -29,6 +29,7 @@ sections:
       avatar:
         size: large     # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle  # Options: circle (default), square, rounded
+  
   - block: experience
     content:
       username: admin
@@ -37,22 +38,32 @@ sections:
       date_format: 'January 2006'
       # Education or Experience section first?
       is_education_first: false
+  
   - block: education
     content:
       title: Education
       username: admin
+  
   - block: certification
     content:
       title: Certifications
       username: admin
+  
   - block: skills
     content:
       title: Skills
       username: admin
-  - block: awards
+  
+  - block: hobbies
+    content:
+      title: Hobbies
+      username: admin
+  
+  - block: portfolio
     content:
       title: Selected Projects
       username: admin
+  
   - block: languages
     content:
       title: Languages
