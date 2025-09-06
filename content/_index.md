@@ -44,7 +44,7 @@ sections:
       title: Education
       username: admin
   
-  - block: certification
+  - block: accomplishments
     content:
       title: Certifications
       username: admin

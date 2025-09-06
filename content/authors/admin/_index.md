@@ -46,27 +46,16 @@ profiles:
   - icon: brands/mastodon
     url: https://mastodon.social/@algosovabject/
 
-certifications:
+accomplishments:
   - area: Machine Learning Specialization
     institution: Stanford University/DeepLearning.AI
-    date_start: 2025-07-01
-    date_end: 2025-07-15
-    summary: |
-      Supervised/unsupervised learning, decision trees, neural networks
 
   - area: Database Engineer
     institution: Meta
-    date_start: 2025-04-26
-    date_end: 2025-06-23
-    summary: |
-      Designed normalized schemas, managed relational data access/control
 
   - area: Advanced & Foundational Data Analytics
     institution: Google
-    date_start: 2025-01-29
-    date_end: 2025-03-01
-    summary: |
-      Predictive models, A/B testing, dashboarding, large dataset cleaning
+
 education:
   - area: Video Game Art
     institution: Full Sail University
