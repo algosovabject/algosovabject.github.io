@@ -46,7 +46,7 @@ profiles:
   - icon: brands/mastodon
     url: https://mastodon.social/@algosovabject/
 
-education:
+certifications:
   - area: Machine Learning Specialization
     institution: Stanford University/DeepLearning.AI
     date_start: 2025-07-01
@@ -67,7 +67,7 @@ education:
     date_end: 2025-03-01
     summary: |
       Predictive models, A/B testing, dashboarding, large dataset cleaning
-
+education:
   - area: Video Game Art
     institution: Full Sail University
     date_start: 2020-06-13
@@ -118,7 +118,7 @@ work:
 skills:
   - name: Technical Skills
     items:
-      - name: Writing & Communication
+      - name: Writing & Comms
         description: 'Technical Documentation, Whitepapers, Tutorials, Academic Writing, AI-Assisted Editing, Multimedia Storytelling, Cross-Functionality'
         percent: 100
         icon: hand-writing
@@ -130,6 +130,9 @@ skills:
         description: 'Pandas, NumPy, Scikit-Learn, TensorFlow, PyTorch, Tableau, VS Code'
         percent: 40
         icon: devicon/vscode
+  
+# Hobbies
+hobbies:
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
@@ -138,7 +141,7 @@ skills:
         description: ''
         percent: 75
         icon: playing-cards
-      - name: Literature
+      - name: Reading
         description: ''
         percent: 100
         icon: books
@@ -153,7 +156,7 @@ languages:
   - name: Español
     percent: 65
   - name: Deutsche
-    percent: 20
+    percent: 15
   - name: Korean (한글)
     percent: 10
 
@@ -170,7 +173,7 @@ Selected Projects:
       - Authored whitepapers, essays, and explainers that make technical research accessible to general audiences.
       - Produced multimedia content (YouTube + Medium) to showcase projects, combining analysis, design, and narrative.
     button:
-      text: 'Check it out'
+      text: 'View here'
       url: 'https://youtube.com/algosovabject'
 
   - title: 'Slime Mold Oracle (Whitepaper)'
@@ -182,8 +185,8 @@ Selected Projects:
       - Synthesized scientific research on Physarum polycephalum into a readable, well-cited analysis.
       - Positioned project within related work (AI oracles, tarot systems, bio-inspired computation).
     button:
-      text: 'Check it out'
-      url: 'https://youtube.com/algosovabject'
+      text: 'Read them on Git'
+      url: 'https://github.com/algosovabject'
 
   - title: 'Glass Casket (AI Black Box Visualizer)'
     date: '2025'
@@ -193,8 +196,8 @@ Selected Projects:
       - Built a query engine that both answers user prompts and threads connections between past queries, creating a dynamic “graveyard” of old models and language fragments.
       - Highlights the tension between interpretability, memory, and obsolescence in machine learning systems through an accessible, visual interface.
     button:
-      text: 'Check it out'
-      url: 'https://youtube.com/algosovabject'
+      text: 'Git Repo'
+      url: 'https://github.com/algosovabject'
 
   - title: 'Robot Boyfriend WHEN? (Essay + Multimedia Drop)'
     date: '2025'
@@ -202,6 +205,9 @@ Selected Projects:
       - Conceptualized, drafted, and research a critical essay on AI companionship, automation, and gender politics.
       - Integrating original graphics and cross-platform release (Medium, YouTube, Instagram).
       - Example of adaptive style: balancing technical accuracy with humor, accessibility, and theory.
+    button:
+      text: 'Read on Medium'
+      url: 'https://medium.com/algosovabject'
 
 ---
 
