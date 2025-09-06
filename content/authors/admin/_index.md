@@ -59,21 +59,10 @@ accomplishments:
 education:
   - area: Video Game Art
     institution: Full Sail University
-    date_start: 2020-06-13
-    date_end: 2022-09-22
-    summary: |
-      GPA: 3.7
-      Developed strong systems thinking and visual communication skills through real-time rendering, animation pipelines, and digital production environments.
-      History of Visual Communication Course Director's Award
-      Fundamentals of Art Course Director's Award
+    date_graduation: 2022-09-23
 
   - area: Graphic Design
     institution: Nossi College of Art
-    date_start: 2007-08-01
-    date_end: 2009-09-29
-    summary: |
-      GPA: 3.8
-      "Most Creative" Faculty Award
 
 work:
   - position: Graphic Designer / Production Artist 
