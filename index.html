@@ -7,7 +7,7 @@
   <style>
     :root {
       --bg-dark: #0A1A17; /* deep emerald */
-      --accent: #D2A226; /* muted neon pink */
+      --accent: #D2A226; /* gold */
       --text-light: #388364;
       --text-muted: #235842;
     }
@@ -104,21 +104,80 @@
     footer a:hover {
       text-decoration: underline;
     }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .btn {
+      background-color: #046307; /* deep emerald */
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #ff5fa2; /* neon pink accent */
+      color: #000;
+    }
+
+    .site-header {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: url('your-header-bg.png') no-repeat center center;
+      background-size: cover;
+      color: white;
+    }
+
+    .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    
+    .thumbnail {
+      width: 700px;
+      border-radius: 6px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .thumbnail:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+
+
+
   </style>
 </head>
 <body>
   <!-- HEADER -->
   <header>
+    <header class="site-header">
+    <img src="your-header-image.png" alt="Header Image" class="header-img">
     <img src="assets/smallbiophoto.jpg" alt="Tiffany Smith" />
     <h1>Tiffany Smith</h1>
     <p>Technical Writer | Creative Technologist | Multimedia Artist</p>
     <p>
-      <a href="https://github.com/algosovabject">GitHub</a> ·
-      <a href="https://linkedin.com/in/tiffmismith">LinkedIn</a> ·
-      <a href="mailto:tiff.mi.smith@gmail.com">Email</a>
+      <div class="social-buttons">
+        <a href="https://github.com/algosovabject" target="_blank" class="btn">GitHub</a>
+        <a href="https://linkedin.com/in/tiffmismith" target="_blank" class="btn">LinkedIn</a>
+        <a href="mailto:tiff.mi.smith@gmail.com" class="btn">Email</a>
+        <a href="https://youtube.com/@algosovabject" target="_blank" class="btn">YouTube</a>
+        <a href="https://medium.com/@algosovabject" target="_blank" class="btn">Medium</a>
+      </div>
     </p>
     <p>
-      
+      <div class="resume-download">
+        <a href="assets/TSmith_Resume.pdf" download class="btn">Download Resume</a>
+      </div>
     </p>
   </header>
 
@@ -144,39 +203,18 @@
     <h2>Portfolio</h2>
 
     <div class="portfolio-item">
-      <img src="assets/AWP.png" alt="Sample 1" />
-      <h3>Academic Whitepaper: Slime Mold Oracle</h3>
-      <div class="buttons">
-        <a href="link-to-online-version">View Online</a>
-        <a href="link-to-pdf">Download PDF</a>
-      </div>
-    </div>
-
-    <div class="portfolio-item">
-      <img src="assets/SWP.png" alt="Sample 2" />
-      <h3>Startup Whitepaper: Slime Mold Oracle</h3>
-      <div class="buttons">
-        <a href="link-to-online-version">View Online</a>
-        <a href="link-to-pdf">Download PDF</a>
-      </div>
-    </div>
-
-    <div class="portfolio-item">
-      <img src="assets/VENV.png" alt="Sample 1" />
-      <h3>Quickstart Guide: Python Virtual Environments</h3>
-      <div class="buttons">
-        <a href="link-to-online-version">View Online</a>
-        <a href="link-to-pdf">Download PDF</a>
-      </div>
-    </div>
-
-    <div class="portfolio-item">
-      <img src="assets/SOP.png" alt="Sample 2" />
-      <h3>Standard Operating Procedure: Security Updates</h3>
-      <div class="buttons">
-        <a href="link-to-online-version">View Online</a>
-        <a href="link-to-pdf">Download PDF</a>
-      </div>
+      <a href="TS-WP-Academic.pdf" target="_blank">
+        <img src="assets/AWP.png" alt="Sample 1" class="thumbnail">
+      </a>
+      <a href="TS-WP-Startup.pdf" target="_blank">
+        <img src="assets/SWP.png" alt="Sample 2" class="thumbnail">
+      </a>
+      <a href="TS-SOP-Cybersecurity.pdf" target="_blank">
+        <img src="assets/SOP.png" alt="Sample 3" class="thumbnail">
+      </a>
+      <a href="TS-Quickstart.pdf" target="_blank">
+        <img src="assets/VENV.png" alt="Sample 4" class="thumbnail">
+      </a>
     </div>
 
   </section>
@@ -191,10 +229,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>
-      <a href="assets/TSmith_Resume.pdf">Download Resume</a>
-    </p>
-    <p>&copy; 2025 Tiffany Smith</p>
+    <p>&copy; 2025 Thirst Snake</p>
   </footer>
 </body>
 </html>
