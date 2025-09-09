@@ -4,49 +4,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tiffany Smith – Technical Writing Portfolio</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
     :root {
-      --bg-dark: #0A1A17; /* deep emerald-black */
-      --accent: #D2A226; /* bright gold */
-      --text-light: #388364; /* main body text */
+      --bg-dark: #0A1A17; /* deep emerald */
+      --accent: #F7EF7A; /* glowing gold */
+      --text-light: #388364;
       --text-muted: #235842;
     }
 
     body {
-      font-family: Garamond, serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
       background: var(--bg-dark);
       color: var(--text-light);
-      text-align: left; /* ensures all normal text left-aligned */
-    }
-
-    header.site-header {
-      text-align: center;
-      padding: 4rem 1rem 2rem;
-      background: url('your-header-bg.png') no-repeat center center;
-      background-size: cover;
-      color: white;
-      position: relative;
-    }
-
-    header.site-header img.portrait {
-      border-radius: 50%;
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border: 4px solid var(--accent);
-      margin-bottom: 1rem;
-      background: var(--bg-dark);
     }
 
     h1, h2, h3 {
       color: var(--text-light);
       font-weight: 600;
-      margin: 0.5rem 0;
+      text-align: left;
+    }
+
+    p, li {
+      color: var(--text-light);
+      text-align: left;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #112822;
+      position: relative;
+    }
+
+    .site-header {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: url('your-header-image.png') no-repeat center center;
+      background-size: cover;
+      color: white;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 2;
     }
 
     section {
@@ -61,66 +74,64 @@
       margin-bottom: 1rem;
     }
 
+    .portfolio-item {
+      margin-bottom: 2rem;
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin-bottom: 0.5rem;
+      border: 2px solid var(--accent);
+      border-radius: 4px;
+    }
+
     /* Buttons */
     .btn {
-      font-family: 'Open Sans', Calibri, sans-serif;
-      background: var(--accent);
+      background-color: var(--accent);
       color: var(--bg-dark);
-      padding: 0.6rem 1.2rem;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.85rem;
       text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
-      display: inline-block;
-      transition: background 0.3s, color 0.3s;
+      border-radius: 4px;
+      transition: all 0.3s;
+      font-weight: bold;
     }
 
     .btn:hover {
-      background: var(--text-light);
-      color: var(--bg-dark);
+      box-shadow: 0 0 12px var(--accent);
+      transform: scale(1.05);
     }
 
+    /* Social buttons (icons only) */
     .social-buttons {
       display: flex;
       justify-content: center;
       gap: 1rem;
       margin: 1.5rem 0;
-      flex-wrap: wrap;
     }
 
-    .resume-download {
-      margin: 1rem 0;
-      text-align: center;
-    }
-
-    /* Portfolio */
-    .portfolio {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
+    .social-buttons .btn {
+      background-color: var(--accent);
+      color: var(--bg-dark);
+      font-size: 1.2rem;
+      border-radius: 50%;
+      transition: all 0.3s;
+      display: inline-flex;
+      align-items: center;
       justify-content: center;
+      width: 42px;
+      height: 42px;
+      padding: 0;
     }
 
-    .portfolio-item img {
-      width: 100%;
-      max-width: 360px;
-      border: 2px solid var(--accent);
-      border-radius: 6px;
-      transition: transform 0.3s, box-shadow 0.3s;
+    .social-buttons .btn:hover {
+      box-shadow: 0 0 12px var(--accent);
+      transform: scale(1.1);
     }
 
-    .portfolio-item img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
-    }
-
-    .portfolio-download {
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-
-    /* Footer */
     footer {
-      font-family: 'Open Sans', Calibri, sans-serif;
       text-align: center;
       padding: 2rem 1rem;
       background: #112822;
@@ -138,25 +149,49 @@
       text-decoration: underline;
     }
 
-    /* Languages */
-    .languages {
-      font-family: 'Open Sans', Calibri, sans-serif;
+    .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    
+    .thumbnail {
+      width: 700px;
+      border-radius: 6px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .thumbnail:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
     }
   </style>
 </head>
 <body>
   <!-- HEADER -->
   <header class="site-header">
-    <img src="assets/smallbiophoto.jpg" alt="Tiffany Smith" class="portrait" />
+    <img src="assets/smallbiophoto.jpg" alt="Tiffany Smith" />
     <h1>Tiffany Smith</h1>
     <p>Technical Writer | Creative Technologist | Multimedia Artist</p>
 
+    <!-- Social buttons -->
     <div class="social-buttons">
-      <a href="https://github.com/algosovabject" target="_blank" class="btn">GitHub</a>
-      <a href="https://linkedin.com/in/tiffmismith" target="_blank" class="btn">LinkedIn</a>
-      <a href="mailto:tiff.mi.smith@gmail.com" class="btn">Email</a>
-      <a href="https://youtube.com/@algosovabject" target="_blank" class="btn">YouTube</a>
-      <a href="https://medium.com/@algosovabject" target="_blank" class="btn">Medium</a>
+      <a href="https://github.com/algosovabject" target="_blank" class="btn" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/tiffmismith" target="_blank" class="btn" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:tiff.mi.smith@gmail.com" class="btn" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://youtube.com/@algosovabject" target="_blank" class="btn" title="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://medium.com/@algosovabject" target="_blank" class="btn" title="Medium">
+        <i class="fab fa-medium"></i>
+      </a>
     </div>
 
     <div class="resume-download">
@@ -171,12 +206,10 @@
       I am an ethics-obsessed technical writer who specializes in creating clear, accessible technical documentation that bridges the gap
       between engineers and non-technical users. Thanks to my unorthodox skillset, I have a sharp instinct for parsing out applicable 
       information and sharing it with target audiences.
-    </p>
-    <p>
+      <br><br>
       With hands-on experience in Python, AI/ML, and software workflows, I write from working knowledge, not just theory. This gives me a
       major edge when documenting technical processes.
-    </p>
-    <p>
+      <br><br>
       I am also the one-woman powerhouse behind Algorithms ov Abjection, a tech-art collective which combines AI/ML, philosophy, literature, 
       and horror aesthetics into strange machines.
     </p>
@@ -186,36 +219,29 @@
   <section>
     <h2>Portfolio</h2>
     <div class="portfolio-download">
-      <a href="assets/TSmith_Samples.zip" download class="btn">Download All Work Samples</a>
+      <a href="assets/TSmith_Samples.zip" download class="btn">Download All Samples</a>
     </div>
-    <div class="portfolio">
-      <div class="portfolio-item">
-        <a href="TS-WP-Academic.pdf" target="_blank">
-          <img src="assets/AWP.png" alt="Sample 1">
-        </a>
-      </div>
-      <div class="portfolio-item">
-        <a href="TS-WP-Startup.pdf" target="_blank">
-          <img src="assets/SWP.png" alt="Sample 2">
-        </a>
-      </div>
-      <div class="portfolio-item">
-        <a href="TS-SOP-Cybersecurity.pdf" target="_blank">
-          <img src="assets/SOP.png" alt="Sample 3">
-        </a>
-      </div>
-      <div class="portfolio-item">
-        <a href="TS-Quickstart.pdf" target="_blank">
-          <img src="assets/VENV.png" alt="Sample 4">
-        </a>
-      </div>
+    <br>
+    <div class="portfolio-item">
+      <a href="TS-WP-Academic.pdf" target="_blank">
+        <img src="assets/AWP.png" alt="Sample 1" class="thumbnail">
+      </a>
+      <a href="TS-WP-Startup.pdf" target="_blank">
+        <img src="assets/SWP.png" alt="Sample 2" class="thumbnail">
+      </a>
+      <a href="TS-SOP-Cybersecurity.pdf" target="_blank">
+        <img src="assets/SOP.png" alt="Sample 3" class="thumbnail">
+      </a>
+      <a href="TS-Quickstart.pdf" target="_blank">
+        <img src="assets/VENV.png" alt="Sample 4" class="thumbnail">
+      </a>
     </div>
   </section>
 
   <!-- LANGUAGES -->
   <section>
     <h2>Languages</h2>
-    <p class="languages">
+    <p>
       English 🇺🇸 (native) · Spanish 🇲🇽 (B2) · German 🇩🇪 (A1) · French 🇫🇷 (basic) · Korean 🇰🇷 (basic) · Python 🐍 (conversational)
     </p>
   </section>
