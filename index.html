@@ -12,8 +12,8 @@
     :root {
       --bg-dark: #0A1A17; /* deep emerald */
       --accent: #F7EF7A; /* glowing gold */
-      --text-light: #388364;
-      --text-muted: #235842;
+      --text-light: #68C8A2;
+      --text-muted: #388364;
     }
 
     body {
@@ -24,6 +24,29 @@
       background: var(--bg-dark);
       color: var(--text-light);
     }
+
+    header h1, 
+    header p {
+      text-align: center;
+    }
+    
+    /* Portfolio section */
+    .portfolio-download {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    
+    .portfolio-item {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+/* Footer centered */
+footer {
+  text-align: center;
+}
 
     h1, h2, h3 {
       color: var(--text-light);
