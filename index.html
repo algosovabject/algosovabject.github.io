@@ -50,19 +50,24 @@ footer {
 }
 
     h1 {
-      color: var(--bg-dark);
+      color: var(--accent); /* Tiffany Smith */
       font-weight: 600;
       text-align: left;
     }
+
+    header p {
+      color: white; /* Subtitle line */
+      margin-top: 0.5rem;
+    }
     
     h2, h3 {
-      color: var(--text-muted);
+      color: var(--text-dark); /* About, Portfolio, Languages */
       font-weight: 600;
       text-align: left;
     }
 
     p, li {
-      color: var(--text-muted);
+      color: var(--text-light); /*body text*/
       text-align: left;
     }
 
@@ -196,6 +201,10 @@ footer {
       transform: scale(1.05);
       box-shadow: 0 6px 12px rgba(0,0,0,0.4);
     }
+
+    section:last-of-type p {
+    color: var(--text-light); /* Languages text specifically*/
+  }
   </style>
 </head>
 <body>
